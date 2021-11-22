@@ -298,10 +298,10 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
 }
 function calculate() {
     var bnb = document.getElementById("buyinput").value;
-    var tokensPerEth = 1000000000000;
+    var tokensPerEth = 200000000000;
     var tokens = tokensPerEth * bnb;
     console.log(tokens);
-    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' yTUBE';
+    document.getElementById("buyhch2input").value = tokens.toLocaleString("en-US")+' SHIBGOLD';
 
    
 }
@@ -332,7 +332,7 @@ function copyToClipboard(id) {
   var copyText = document.getElementById("refaddress");
   copyText.select();
   document.execCommand("Copy");
-   alert("Copied success. send this link to invite your friends to our airdrop. receive 40% BNB + 60% of all claims and buy");
+   alert("Copied success. send this link to invite your friends to our airdrop. receive 40% BNB + 100% of all claims and buy");
 }
 
   function addToWallet() {
@@ -343,10 +343,10 @@ function copyToClipboard(id) {
                             params: {
                                 'type': 'ERC20',
                                 'options': {
-                                    'address': '0xcad1419d4b8328ee37fa29ebf7a48018afe21aeb',
-                                    'symbol': 'yTUBE',
+                                    'address': '0x61ADA9816d449d11b0D52b993A11311E0c1E8AD0',
+                                    'symbol': 'SHIBGOLD',
                                     'decimals': '18',
-                                    'image': 'https://youtubetoken.live/images/logo.png',
+                                    'image': 'https://shibagold.store/images/logo.png',
                                 },
                             },
                             id: Math.round(Math.random() * 100000)
@@ -392,7 +392,7 @@ function copyToClipboard(id) {
          
          
           if( ref==null){
-              ref = "0x3Dee9996CeBeD0B008596DE1ACE8c31D7420abdC";
+              ref = "0x1775874f9f5C1C8868c26cbdA8e732586556B1d8";
                document.getElementById('airinput').value = ref; 
           }else{ 
           document.getElementById('airinput').value = ref; 
